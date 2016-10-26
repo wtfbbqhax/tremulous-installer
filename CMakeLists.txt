@@ -1,10 +1,12 @@
 cmake_minimum_required(VERSION 2.6)
 project(tremulous-installer)
+
 add_subdirectory(lua)
 add_subdirectory(nettle)
 
 add_executable(tremulous-installer
     lnettlelib.c
+    lnettlelib.h
     main.c
     )
 
